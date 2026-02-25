@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Creative Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&family=Kaisei+Decol:wght@400;700&family=M+PLUS+Rounded+1c:wght@400;700;800;900&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cur-wrap">
+  <svg id="cur-star" width="28" height="28" viewBox="0 0 28 28">
+    <path d="M14 2 L16.2 10.5 L24.5 8 L18.5 14 L24.5 20 L16.2 17.5 L14 26 L11.8 17.5 L3.5 20 L9.5 14 L3.5 8 L11.8 10.5 Z" fill="#FF6B9D" stroke="#1a1a2e" stroke-width="1.5"/>
+  </svg>
+</div>
+
+<!-- BG doodles removed for performance -->
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <span class="logo-star">★</span> Portfolio
+  </a>
+  <ul class="nav-links">
+    <li><a href="#works">Works</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="hero-blob hero-blob-3"></div>
+  <span class="float-el">💬</span>
+  <span class="float-el">🔮</span>
+  <span class="float-el">✏️</span>
+  <span class="float-el">🗄️</span>
+  <span class="float-el">⭐</span>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Creative Works ✦</div>
+    <h1 class="hero-title">
+      <span class="line1">My</span>
+      <span class="line2">Portfolio</span>
+    </h1>
+    <p class="hero-desc">
+      つくる・伝える・つながる・支える<br>
+      ものづくりにかける、4つの仕事。
+    </p>
+  </div>
+</section>
+
+<!-- Wiggle top of works -->
+<div class="wiggle-div" style="background:var(--sky)">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="60">
+    <path d="M0,0 C200,60 400,0 600,40 C800,80 1000,20 1200,50 L1200,0 Z" fill="white"/>
+  </svg>
+</div>
+
+<!-- WORKS -->
+<section class="works-section" id="works">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head-label">Works</div>
+      <div class="section-tag">作品一覧</div>
+    </div>
+    <div class="cards-grid">
+
+      <!-- 01 LINEスタンプ -->
+      <div class="work-card card-line reveal" style="cursor:default;">
+        <div class="card-num">01</div>
+        <div class="card-strip">
+          <div class="card-strip-dots"></div>
+          <div class="strip-circle strip-c1"></div>
+          <div class="strip-circle strip-c2"></div>
+          <div class="strip-circle strip-c3"></div>
+          <div class="card-icon-wrap">💬</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-badge">LINE STAMPS · 4 SERIES</div>
+          <h3 class="card-title">LINEスタンプ</h3>
+          <p class="card-desc">誰かの日常の会話の中に、自分の表現が溶け込んでいく——そんな感覚を初めて体験した作品。「届ける」という行為の意味を問い続けた、全4シリーズ。</p>
+          <div class="stamp-series-grid">
+            <button class="stamp-item" data-modal="modal-sheep">
+              <div class="stamp-emoji">🐑</div>
+              <div class="stamp-info">
+                <div class="stamp-name">ひつじのおやすみ○○</div>
+                <div class="stamp-count">8種類</div>
+              </div>
+            </button>
+            <button class="stamp-item" data-modal="modal-zodiac">
+              <div class="stamp-emoji">⭐</div>
+              <div class="stamp-info">
+                <div class="stamp-name">おやすみゆる12星座</div>
+                <div class="stamp-count">16種類</div>
+              </div>
+            </button>
+            <button class="stamp-item" data-modal="modal-cow">
+              <div class="stamp-emoji">🐄</div>
+              <div class="stamp-info">
+                <div class="stamp-name">モーつかれた牛</div>
+                <div class="stamp-count">8種類</div>
+              </div>
+            </button>
+            <button class="stamp-item" data-modal="modal-ke">
+              <div class="stamp-emoji">💤</div>
+              <div class="stamp-info">
+                <div class="stamp-name">おやすみけ</div>
+                <div class="stamp-count">8種類</div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 謎解き -->
+      <div class="work-card card-puzzle reveal">
+        <div class="card-num">02</div>
+        <div class="card-strip">
+          <div class="card-strip-dots"></div>
+          <div class="strip-circle strip-c1"></div>
+          <div class="strip-circle strip-c2"></div>
+          <div class="strip-circle strip-c3"></div>
+          <div class="card-icon-wrap">🔮</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-badge">MYSTERY · PDF</div>
+          <h3 class="card-title">謎解き</h3>
+          <p class="card-desc">学内版は30時間・10回以上の検証。大学周辺版は7人チームのリーダーとして制作。<br>「言い合いはしても喧嘩はしない」を標語に、意見のぶつかりあいを創作の質を高めるプロセスへ。参加者が場所そのものと出会い、答えにたどり着く驚きと高揚を設計しました。</p>
+          <div class="card-pills">
+            <span class="pill">🏫 学内周遊型</span>
+            <span class="pill">🗺️ 大学周辺版</span>
+            <span class="pill">👥 7人チーム</span>
+          </div>
+          <button class="card-btn" data-modal="modal-puzzle">PDFをダウンロード →</button>
+        </div>
+      </div>
+
+      <!-- 03 note -->
+      <div class="work-card card-note reveal">
+        <div class="card-num">03</div>
+        <div class="card-strip">
+          <div class="card-strip-dots"></div>
+          <div class="strip-circle strip-c1"></div>
+          <div class="strip-circle strip-c2"></div>
+          <div class="strip-circle strip-c3"></div>
+          <div class="card-icon-wrap">✏️</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-badge">NOTE · WRITING</div>
+          <h3 class="card-title">noteリンク</h3>
+          <p class="card-desc">生成AIに頼らず、自分の言葉だけで書き続ける。効率よりも誠実さを選ぶ姿勢は、伝えることへのリスペクトを保ち続けるための選択。<br>書くことの苦しみに正面から向き合い続けることが、受け手への誠実さだと信じています。</p>
+          <button class="card-btn" data-modal="modal-note">noteを読む →</button>
+        </div>
+      </div>
+
+      <!-- 04 探究データベース -->
+      <div class="work-card card-db reveal">
+        <div class="card-num">04</div>
+        <div class="card-strip">
+          <div class="card-strip-dots"></div>
+          <div class="strip-circle strip-c1"></div>
+          <div class="strip-circle strip-c2"></div>
+          <div class="strip-circle strip-c3"></div>
+          <div class="card-icon-wrap">🗄️</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-badge">DATABASE · RESEARCH</div>
+          <h3 class="card-title">探究データベース</h3>
+          <p class="card-desc">何かを創りたい・調べたい・深めたいと思っている人の「最初の一歩」を支えたい。<br>情報が整理されアクセスしやすくなるだけで、誰かの探究が動き出す。そのインフラを作ることも、創作文化を支える重要な貢献だと確信しています。</p>
+          <button class="card-btn" data-modal="modal-db">サイトを見る →</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Wiggle bottom of works -->
+<div class="wiggle-div" style="background:white">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="60">
+    <path d="M0,50 C200,0 400,60 600,20 C800,-20 1000,50 1200,10 L1200,60 L0,60 Z" fill="var(--purple)"/>
+  </svg>
+</div>
+
+<!-- Quote banner -->
+<div class="quote-banner">
+  <div class="quote-inner reveal">
+    <p class="quote-text">「<em>言い合いはしても</em>　喧嘩はしない」</p>
+    <p class="quote-sub">— チーム謎解き制作、7人のリーダーとして掲げた標語</p>
+  </div>
+</div>
+
+<div class="wiggle-div" style="background:var(--purple)">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="60">
+    <path d="M0,0 C200,60 400,0 600,40 C800,80 1000,20 1200,50 L1200,0 Z" fill="var(--yellow)"/>
+  </svg>
+</div>
+
+<!-- Marquee -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="marquee-item"><span class="marquee-dot"></span>LINE STAMPS</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>謎解き PDF</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>note</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>探究データベース</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>CREATIVE WORKS</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>LINE STAMPS</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>謎解き PDF</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>note</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>探究データベース</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>CREATIVE WORKS</span>
+  </div>
+</div>
+
+<!-- ═══════════════ MODALS ═══════════════ -->
+
+<!-- Modal: ひつじのおやすみ○○ -->
+<div class="modal-overlay" id="modal-sheep">
+  <div class="modal">
+    <div class="modal-header hdr-line">
+      <div class="modal-header-left">
+        <span class="modal-header-icon">🐑</span>
+        <div>
+          <div class="modal-title">ひつじのおやすみ○○</div>
+          <div class="modal-subtitle">8 STAMPS · LINE STORE</div>
+        </div>
+      </div>
+      <button class="modal-close" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="stamp-preview-grid">
+        <div class="stamp-preview-item"><img src="images/sheep_01.png" alt="ひつじ1"></div>
+        <div class="stamp-preview-item"><img src="images/sheep_02.png" alt="ひつじ2"></div>
+        <div class="stamp-preview-item"><img src="images/sheep_03.png" alt="ひつじ3"></div>
+        <div class="stamp-preview-item"><img src="images/sheep_04.png" alt="ひつじ4"></div>
+        <div class="stamp-preview-item"><img src="images/sheep_05.png" alt="ひつじ1"></div>
+        <div class="stamp-preview-item"><img src="images/sheep_06.png" alt="ひつじ1"></div>
+        <div class="stamp-preview-item"><img src="images/sheep_07.png" alt="ひつじ1"></div>
+        <div class="stamp-preview-item"><img src="images/sheep_08.png" alt="ひつじ1"></div>
+      </div>
+      <p style="font-size:0.78rem;color:#666;margin-bottom:1.2rem;line-height:1.7;">「おやすみ」の気持ちをひつじキャラクターでだじゃれっぽく表現したスタンプ。全8種類。</p>
+      <a href="https://store.line.me/stickershop/product/32949424/ja" class="modal-store-btn">🛒 LINEストアで見る</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: おやすみゆる12星座 -->
+<div class="modal-overlay" id="modal-zodiac">
+  <div class="modal">
+    <div class="modal-header hdr-line">
+      <div class="modal-header-left">
+        <span class="modal-header-icon">⭐</span>
+        <div>
+          <div class="modal-title">おやすみゆる12星座</div>
+          <div class="modal-subtitle">16 STAMPS · LINE STORE</div>
+        </div>
+      </div>
+      <button class="modal-close" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="stamp-preview-grid">
+        <div class="stamp-preview-item"><img src="images/zodiac_01.png" alt="12星座1"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_02.png" alt="12星座2"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_03.png" alt="12星座3"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_04.png" alt="12星座4"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_05.png" alt="12星座5"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_06.png" alt="12星座6"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_07.png" alt="12星座7"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_08.png" alt="12星座8"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_09.png" alt="12星座9"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_10.png" alt="12星座10"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_11.png" alt="12星座11"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_12.png" alt="12星座12"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_13.png" alt="12星座13"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_14.png" alt="12星座14"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_15.png" alt="12星座15"></div>
+        <div class="stamp-preview-item"><img src="images/zodiac_16.png" alt="12星座16"></div>
+      </div>
+      <p style="font-size:0.78rem;color:#666;margin-bottom:1.2rem;line-height:1.7;">12星座それぞれの「おやすみ」を、ゆるかわいいキャラクターで表現。全16種類。</p>
+      <a href="https://store.line.me/stickershop/product/32957046/ja" class="modal-store-btn">🛒 LINEストアで見る</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: モーつかれた牛 -->
+<div class="modal-overlay" id="modal-cow">
+  <div class="modal">
+    <div class="modal-header hdr-line">
+      <div class="modal-header-left">
+        <span class="modal-header-icon">🐄</span>
+        <div>
+          <div class="modal-title">モーつかれた牛</div>
+          <div class="modal-subtitle">8 STAMPS · LINE STORE</div>
+        </div>
+      </div>
+      <button class="modal-close" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="stamp-preview-grid">
+        <div class="stamp-preview-item"><img src="images/cow_01.png" alt="うし1"></div>
+        <div class="stamp-preview-item"><img src="images/cow_02.png" alt="うし2"></div>
+        <div class="stamp-preview-item"><img src="images/cow_03.png" alt="うし3"></div>
+        <div class="stamp-preview-item"><img src="images/cow_04.png" alt="うし4"></div>
+        <div class="stamp-preview-item"><img src="images/cow_05.png" alt="うし5"></div>
+        <div class="stamp-preview-item"><img src="images/cow_06.png" alt="うし6"></div>
+        <div class="stamp-preview-item"><img src="images/cow_07.png" alt="うし7"></div>
+        <div class="stamp-preview-item"><img src="images/cow_08.png" alt="うし8"></div>
+      </div>
+      <p style="font-size:0.78rem;color:#666;margin-bottom:1.2rem;line-height:1.7;">「もうつかれた…」な気持ちを牛キャラが代弁してくれるスタンプ。全8種類。</p>
+      <a href="https://store.line.me/stickershop/product/32987381/ja" class="modal-store-btn">🛒 LINEストアで見る</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: おやすみけ -->
+<div class="modal-overlay" id="modal-ke">
+  <div class="modal">
+    <div class="modal-header hdr-line">
+      <div class="modal-header-left">
+        <span class="modal-header-icon">💤</span>
+        <div>
+          <div class="modal-title">おやすみけ</div>
+          <div class="modal-subtitle">8 STAMPS · LINE STORE</div>
+        </div>
+      </div>
+      <button class="modal-close" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="stamp-preview-grid">
+        <div class="stamp-preview-item"><img src="images/mike_01.png" alt="みけ1"></div>
+        <div class="stamp-preview-item"><img src="images/mike_02.png" alt="みけ2"></div>
+        <div class="stamp-preview-item"><img src="images/mike_03.png" alt="みけ3"></div>
+        <div class="stamp-preview-item"><img src="images/mike_04.png" alt="みけ4"></div>
+        <div class="stamp-preview-item"><img src="images/mike_05.png" alt="みけ5"></div>
+        <div class="stamp-preview-item"><img src="images/mike_06.png" alt="みけ6"></div>
+        <div class="stamp-preview-item"><img src="images/mike_07.png" alt="みけ7"></div>
+        <div class="stamp-preview-item"><img src="images/mike_08.png" alt="みけ8"></div>
+      </div>
+      <p style="font-size:0.78rem;color:#666;margin-bottom:1.2rem;line-height:1.7;">シンプルでゆるかわな「おやすみ」スタンプ。全8種類。</p>
+      <a href="https://store.line.me/stickershop/product/32959699/ja" class="modal-store-btn">🛒 LINEストアで見る</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: 謎解きPDF -->
+<div class="modal-overlay" id="modal-puzzle">
+  <div class="modal">
+    <div class="modal-header hdr-puzzle">
+      <div class="modal-header-left">
+        <span class="modal-header-icon">🔮</span>
+        <div>
+          <div class="modal-title">謎解きコンテンツ</div>
+          <div class="modal-subtitle">PDF DOWNLOAD</div>
+        </div>
+      </div>
+      <button class="modal-close" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="pdf-embed-wrap" id="pdf-preview-wrap">
+        <div class="pdf-placeholder">
+          <div class="pdf-icon">📄</div>
+          <strong>謎解きPDF</strong>
+          <p>PDFのURLを設定すると<br>ここにプレビューが表示されます。</p>
+        </div>
+      </div>
+      <a href="pdf/大学周辺周遊型謎解き（参加者印刷用）.pdf" class="modal-dl-btn" id="pdf-dl-btn">⬇️ PDFをダウンロード</a>
+      <div class="modal-link-list">
+        <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.1em;margin-bottom:0.5rem;color:#888;">収録コンテンツ</div>
+        <div class="modal-link-item" style="pointer-events:none;opacity:0.85;">
+          <span class="modal-link-icon">🏫</span>
+          <div class="modal-link-text">
+            <div class="modal-link-title">学内周遊型謎解き</div>
+            <div class="modal-link-sub">新入生がキャンパスに慣れるための体験型コンテンツ · 30時間制作</div>
+          </div>
+        </div>
+        <div class="modal-link-item" style="pointer-events:none;opacity:0.85;">
+          <span class="modal-link-icon">🗺️</span>
+          <div class="modal-link-text">
+            <div class="modal-link-title">大学周辺周遊型謎解き</div>
+            <div class="modal-link-sub">7人チームでリーダーとして制作 · 20時間以上のリサーチ</div>
+          </div>
+        </div>
+      </div>
+      <p class="modal-note"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: note -->
+<div class="modal-overlay" id="modal-note">
+  <div class="modal">
+    <div class="modal-header hdr-note">
+      <div class="modal-header-left">
+        <span class="modal-header-icon">✏️</span>
+        <div>
+          <div class="modal-title">noteリンク</div>
+          <div class="modal-subtitle">WRITING · ESSAYS</div>
+        </div>
+      </div>
+      <button class="modal-close" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-link-list">
+        <a href="https://note.com/toaru_uni_ja" class="modal-link-item">
+          <span class="modal-link-icon">📝</span>
+          <div class="modal-link-text">
+            <div class="modal-link-title">noteプロフィールページ</div>
+            <div class="modal-link-sub">すべての記事はこちらから</div>
+          </div>
+          <span class="modal-link-arrow">→</span>
+        </a>
+        <a href="https://note.com/toaru_uni_ja/n/n65c538e0d38f?sub_rt=share_sb" class="modal-link-item">
+          <span class="modal-link-icon">💭</span>
+          <div class="modal-link-text">
+            <div class="modal-link-title">ジャーナルを今日から始めてみる【とある大学生の記録】</div>
+            <div class="modal-link-sub">https://note.com/toaru_uni_ja/n/n65c538e0d38f?sub_rt=share_sb</div>
+          </div>
+          <span class="modal-link-arrow">→</span>
+        </a>
+        <a href="https://note.com/toaru_uni_ja/n/ne25ea21e74e7?sub_rt=share_sb" class="modal-link-item">
+          <span class="modal-link-icon">💭</span>
+          <div class="modal-link-text">
+            <div class="modal-link-title">映画『国宝』感想 / 言葉にならない。その“目”に魅せられた / ネタバレなし【とある大学生の映画レポ】</div>
+            <div class="modal-link-sub">https://note.com/toaru_uni_ja/n/ne25ea21e74e7?sub_rt=share_sb</div>
+          </div>
+          <span class="modal-link-arrow">→</span>
+        </a>
+        <a href="https://note.com/toaru_uni_ja/n/nf41d938805a7?sub_rt=share_sb" class="modal-link-item">
+          <span class="modal-link-icon">💭</span>
+          <div class="modal-link-text">
+            <div class="modal-link-title">1日14時間寝て何かをした実感がない1日でも、noteは書けた【とある大学生の記録】</div>
+            <div class="modal-link-sub">https://note.com/toaru_uni_ja/n/nf41d938805a7?sub_rt=share_sb</div>
+          </div>
+          <span class="modal-link-arrow">→</span>
+        </a>
+      </div>
+      <p class="modal-note">生成AIに頼らず、自分の言葉だけで書き続けています。</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: 探究データベース -->
+<div class="modal-overlay" id="modal-db">
+  <div class="modal">
+    <div class="modal-header hdr-db">
+      <div class="modal-header-left">
+        <span class="modal-header-icon">🗄️</span>
+        <div>
+          <div class="modal-title">探究データベース</div>
+          <div class="modal-subtitle">RESEARCH SUPPORT SITE</div>
+        </div>
+      </div>
+      <button class="modal-close" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-link-list">
+        <a href="#" class="modal-link-item">
+          <span class="modal-link-icon">🔍</span>
+          <div class="modal-link-text">
+            <div class="modal-link-title">探究テーマ事例データベース</div>
+            <div class="modal-link-sub">何かを創りたい・調べたい人の「最初の一歩」を支えるサイト</div>
+          </div>
+          <span class="modal-link-arrow">→</span>
+        </a>
+        <a href="#" class="modal-link-item">
+          <span class="modal-link-icon">📚</span>
+          <div class="modal-link-text">
+            <div class="modal-link-title">探究学習支援サイト TOP</div>
+            <div class="modal-link-sub">URLを設定してください</div>
+          </div>
+          <span class="modal-link-arrow">→</span>
+        </a>
+      </div>
+      <p class="modal-note">情報が整理され、アクセスしやすくなるだけで、誰かの探究が動き出す。<br>そのインフラを作ることも、創作文化を支える重要な貢献だと確信しています。</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        Portfolio
+        <span>My Creative Works</span>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="#">LINEスタンプ</a>
+        <a href="#">謎解き（PDF）</a>
+        <a href="#">noteリンク</a>
+        <a href="#">探究データベース</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 My Portfolio. All rights reserved.</p>
+      <p class="footer-made">Made with ♥ and curiosity</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── Cursor ──
+const curWrap = document.getElementById('cur-wrap');
+const curStar = document.getElementById('cur-star');
+document.addEventListener('mousemove', e => {
+  curWrap.style.left = e.clientX + 'px';
+  curWrap.style.top  = e.clientY + 'px';
+});
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => curStar.style.animationDuration = '0.35s');
+  el.addEventListener('mouseleave', () => curStar.style.animationDuration = '3s');
+});
+
+// ── Scroll reveal ──
+const io = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('v'), i * 100);
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ── Card 3D tilt (RAF throttled) ──
+document.querySelectorAll('.work-card').forEach(card => {
+  let rafId = null;
+  card.addEventListener('mousemove', e => {
+    if (rafId) return;
+    rafId = requestAnimationFrame(() => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width  - 0.5;
+      const y = (e.clientY - r.top)  / r.height - 0.5;
+      card.style.transform = `translate(${-4 + x*3}px, ${-4 + y*3}px) rotate(${x * -2}deg)`;
+      card.style.boxShadow = `${12 + x*5}px ${12 + y*5}px 0 #1a1a2e`;
+      rafId = null;
+    });
+  });
+  card.addEventListener('mouseleave', () => {
+    if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+    card.style.transform = '';
+    card.style.boxShadow = '';
+  });
+});
+
+// ── Modal ──
+function openModal(id) {
+  const overlay = document.getElementById(id);
+  if (!overlay) return;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(overlay) {
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Open: data-modal triggers
+document.querySelectorAll('[data-modal]').forEach(el => {
+  el.addEventListener('click', e => {
+    e.stopPropagation();
+    openModal(el.dataset.modal);
+  });
+});
+
+// Close: ✕ button
+document.querySelectorAll('[data-close]').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    closeModal(btn.closest('.modal-overlay'));
+  });
+});
+
+// Close: click outside modal
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) closeModal(overlay);
+  });
+});
+
+// Close: Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.open').forEach(closeModal);
+  }
+});
+</script>
+</body>
+</html>
