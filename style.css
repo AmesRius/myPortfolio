@@ -517,37 +517,27 @@ button.stamp-item {
 }
 .modal-store-btn.disabled:hover { transform: none; box-shadow: var(--shadow); }
 
-/* ── PDF MODAL ── */
-.pdf-embed-wrap {
-  background: #333;
-  border: var(--border);
-  border-radius: 12px;
-  overflow: hidden;
-  aspect-ratio: 3/4;
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: 1.2rem;
+/* ── PDF CARDS ── */
+.pdf-card-wrap { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1rem; }
+.pdf-card {
+  display: flex; align-items: center; gap: 1rem;
+  background: white; border: var(--border); border-radius: 16px;
+  padding: 1.1rem 1.2rem; text-decoration: none; color: var(--ink);
+  box-shadow: var(--shadow);
+  transition: transform 0.15s cubic-bezier(.34,1.56,.64,1), box-shadow 0.15s, background 0.15s;
 }
-.pdf-placeholder {
-  text-align: center; color: white; padding: 2rem;
+.pdf-card:hover { transform: translate(-3px,-3px); box-shadow: 8px 8px 0 var(--ink); background: #e8d5ff; }
+.pdf-card-icon { font-size: 2rem; flex-shrink: 0; }
+.pdf-card-info { flex: 1; }
+.pdf-card-title { font-weight: 800; font-size: 0.9rem; margin-bottom: 0.2rem; }
+.pdf-card-sub { font-size: 0.7rem; color: #777; line-height: 1.5; }
+.pdf-dl-badge {
+  flex-shrink: 0; background: var(--purple); color: white;
+  border: 2px solid var(--ink); border-radius: 100px;
+  padding: 0.3rem 0.7rem; font-size: 0.72rem; font-weight: 800;
+  box-shadow: 2px 2px 0 var(--ink);
+  white-space: nowrap;
 }
-.pdf-placeholder .pdf-icon { font-size: 3.5rem; margin-bottom: 0.8rem; }
-.pdf-placeholder p { font-size: 0.82rem; opacity: 0.7; line-height: 1.7; }
-.pdf-placeholder strong { font-size: 1rem; display: block; margin-bottom: 0.3rem; opacity: 1; }
-
-.modal-dl-btn {
-  display: flex; align-items: center; justify-content: center; gap: 0.6rem;
-  width: 100%;
-  background: var(--purple); color: white;
-  border: var(--border); border-radius: 100px;
-  padding: 0.85rem 1.5rem;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 0.88rem; font-weight: 900;
-  box-shadow: var(--shadow); cursor: pointer;
-  text-decoration: none;
-  transition: transform 0.15s, box-shadow 0.15s;
-  margin-bottom: 0.7rem;
-}
-.modal-dl-btn:hover { transform: translate(-2px,-2px); box-shadow: 7px 7px 0 var(--ink); }
 
 /* ── LINK LIST MODAL (note / db) ── */
 .modal-link-list { display: flex; flex-direction: column; gap: 0.7rem; }
@@ -586,4 +576,5 @@ button.stamp-item {
   .hero-title { font-size: clamp(2.8rem, 13vw, 4rem); }
   .hero-title .line2 { -webkit-text-stroke: 2px var(--ink); }
   .section-head { flex-wrap: wrap; }
+
 }
