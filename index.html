@@ -483,14 +483,14 @@
 // ── Cursor ──
 const curWrap = document.getElementById('cur-wrap');
 const curStar = document.getElementById('cur-star');
-document.addEventListener('mousemove', e => {
-  curWrap.style.left = e.clientX + 'px';
-  curWrap.style.top  = e.clientY + 'px';
-});
-document.querySelectorAll('a, button').forEach(el => {
-  el.addEventListener('mouseenter', () => curStar.style.animationDuration = '0.35s');
-  el.addEventListener('mouseleave', () => curStar.style.animationDuration = '3s');
-});
+const CUR_OFFSET = 14;
+if (window.matchMedia('(hover: none)').matches) {
+  curWrap.style.display = 'none';
+} else {
+  document.addEventListener('mousemove', e => {
+    curWrap.style.transform = `translate(${e.clientX - CUR_OFFSET}px, ${e.clientY - CUR_OFFSET}px)`;
+  });
+}
 
 // ── Scroll reveal ──
 const io = new IntersectionObserver(entries => {
@@ -570,6 +570,7 @@ document.addEventListener('keydown', e => {
 
 </body>
 </html>
+
 
 
 
