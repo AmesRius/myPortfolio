@@ -505,7 +505,7 @@ const io = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
 // ── Card 3D tilt (RAF throttled) ──
-document.querySelectorAll('.work-card').forEach(card => {
+document.querySelectorAll('.work-card:not(.card-line)').forEach(card => {
   let rafId = null;
   card.addEventListener('mousemove', e => {
     if (rafId) return;
@@ -513,15 +513,15 @@ document.querySelectorAll('.work-card').forEach(card => {
       const r = card.getBoundingClientRect();
       const x = (e.clientX - r.left) / r.width  - 0.5;
       const y = (e.clientY - r.top)  / r.height - 0.5;
-      card.style.transform = `translate(${-4 + x*3}px, ${-4 + y*3}px) rotate(${x * -2}deg)`;
-      card.style.boxShadow = `${12 + x*5}px ${12 + y*5}px 0 #1a1a2e`;
+      card.style.boxShadow = `${8 + x*8}px ${8 + y*8}px 0 #1a1a2e`;
+      card.style.outline = '3px solid #1a1a2e';
       rafId = null;
     });
   });
   card.addEventListener('mouseleave', () => {
     if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
-    card.style.transform = '';
     card.style.boxShadow = '';
+    card.style.outline = '';
   });
 });
 
@@ -571,5 +571,6 @@ document.addEventListener('keydown', e => {
 
 </body>
 </html>
+
 
 
