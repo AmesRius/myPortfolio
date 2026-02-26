@@ -21,6 +21,9 @@ body {
   overflow-x: hidden;
   cursor: none;
 }
+@media (hover: none) {
+  body { cursor: auto; }
+}
 
 /* ── Custom cursor ── */
 #cur-wrap { position: fixed; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); top: 0; left: 0; }
@@ -578,3 +581,4 @@ button.stamp-item {
   .section-head { flex-wrap: wrap; }
 
 }
+
